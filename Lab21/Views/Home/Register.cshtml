@@ -1,0 +1,12 @@
+﻿@{
+    ViewBag.Title = "Register";
+}
+<h2>Registration Form</h2>
+<form action="~/Views/Home/AddUser.cshtml" method="post">
+First Name: <input type="text" id="fName" pattern="[A-Z]{1}[a-zA-Z]{1,}" /><br />
+ Last Name: <input type="text" id="lName" pattern="[A-Z]{1}[a-zA-Z-]{1,}" /><br />
+    E-mail: <input type="email" id="email" /><br />
+     Phone: <input type="tel" id="phone" pattern="\d{3}-\d{3}-\d{4}" /><br />
+  Password: <input type="password" id="pass" /><br />
+<input type="submit"/>
+</form>

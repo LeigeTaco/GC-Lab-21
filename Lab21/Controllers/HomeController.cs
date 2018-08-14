@@ -26,5 +26,21 @@ namespace Lab21.Controllers
 
             return View();
         }
+
+        public ActionResult Register()
+        {
+
+            ViewBag.Message = "Create an account.";
+
+            return View();
+        }
+
+        public ActionResult AddUser()
+        {
+
+            ViewBag.Message = $"Welcome, ";
+
+            return View();
+        }
     }
 }
